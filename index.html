@@ -6,6 +6,9 @@
     <title>Vignesh S | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,35 +23,85 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="theme-toggle" id="theme-toggle" title="Switch Theme">
+                <span class="icon">☀️</span>
+            </div>
             <div class="menu-toggle">&#9776;</div>
         </nav>
     </header>
 
     <section class="hero">
-        <img src="images/vicky.jpg" alt="Profile Picture" class="profile-img">
-        <h1>Hello, I'm <span>Vignesh S</span></h1>
-        <p>Aspiring IT Professional | Full Stack Java | Python Developer</p>
-        <a href="#contact" class="btn">Contact Me</a>
+        <div class="hero-content">
+            <img src="images/vicky.jpg" alt="Profile Picture" class="profile-img">
+            <h1>Hello, I'm <span class="highlight">Vignesh S</span></h1>
+            <h2 class="typing-container">I am a <span class="typing-text"></span><span class="cursor">|</span></h2>
+            <p>Aspiring IT Professional | Full Stack Java | Python Developer</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">View Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            Aspiring IT professional with hands-on experience in software development,
-            full-stack Java, and digital marketing. Currently pursuing MCA and passionate
-            about solving real-world problems using technology.
-        </p>
+        <div class="about-content">
+            <p>
+                I am an aspiring IT professional with a robust foundation in software development, specializing in
+                <strong>Full-Stack Java</strong> and <strong>Python</strong>. Currently pursuing my MCA at BMS College
+                of Engineering,
+                I am passionate about leveraging technology to solve real-world problems.
+            </p>
+            <p>
+                My journey involves hands-on experience in building web applications, predictive models, and
+                digital marketing strategies. I am a quick learner, always eager to explore new technologies
+                and methodologies to enhance my skillset.
+            </p>
+        </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <div class="card">
-            <h3>MCA – BMS College of Engineering</h3>
-            <p>2024–2026 (Pursuing)</p>
+        <div class="timeline">
+            <div class="card timeline-item">
+                <h3>MCA – BMS College of Engineering</h3>
+                <p class="date">2024 – 2026 (Pursuing)</p>
+                <p>Focusing on Advanced Software Engineering and Data Science.</p>
+            </div>
+            <div class="card timeline-item">
+                <h3>BCA – REVA University</h3>
+                <p class="date">2021 – 2024</p>
+                <p>Graduated with distinction. Built strong fundamentals in Computer Applications.</p>
+            </div>
         </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
         <div class="card">
-            <h3>BCA – REVA University</h3>
-            <p>2021–2024</p>
+            <h3>Web Development Intern</h3>
+            <p class="company">Tech Solutions Inc. (Placeholder)</p>
+            <p class="date">Jan 2024 – Mar 2024</p>
+            <p>Assisted in developing frontend components using HTML, CSS, and JavaScript. Optimized website
+                performance.</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="card cert-card">
+                <h3>Full Stack Java Development</h3>
+                <p>Udemy - 2023</p>
+            </div>
+            <div class="card cert-card">
+                <h3>Python for Data Science</h3>
+                <p>Coursera - 2022</p>
+            </div>
+            <div class="card cert-card">
+                <h3>Digital Marketing Fundamentals</h3>
+                <p>Google Garage - 2021</p>
+            </div>
         </div>
     </section>
 
@@ -57,28 +110,36 @@
 
         <div class="card">
             <img src="images/event.png" alt="EventPro Project" class="project-img">
-            <h3>EventPro – Smart Event Management Platform</h3>
-            <p>Built a responsive event booking web app with login/signup, booking flow,
-                and admin dashboard using Agile Scrum methodology.</p>
+            <div class="card-content">
+                <h3>EventPro – Smart Event Management Platform</h3>
+                <p>Built a responsive event booking web app with login/signup, booking flow,
+                    and admin dashboard using Agile Scrum methodology.</p>
+            </div>
         </div>
 
         <div class="card">
             <img src="images/disease.jpg" alt="Alzheimer’s Disease Prediction" class="project-img">
-            <h3>Alzheimer’s Disease Prediction</h3>
-            <p>Developed a predictive ML model using Python (pandas, scikit-learn,
-                matplotlib) for early-stage detection.</p>
+            <div class="card-content">
+                <h3>Alzheimer’s Disease Prediction</h3>
+                <p>Developed a predictive ML model using Python (pandas, scikit-learn,
+                    matplotlib) for early-stage detection.</p>
+            </div>
         </div>
 
         <div class="card">
             <img src="images/aqua.jpg" alt="Aqua Mart" class="project-img">
-            <h3>Aqua Mart – E-commerce Platform</h3>
-            <p>Designed UI using HTML/CSS and implemented MySQL backend.</p>
+            <div class="card-content">
+                <h3>Aqua Mart – E-commerce Platform</h3>
+                <p>Designed UI using HTML/CSS and implemented MySQL backend.</p>
+            </div>
         </div>
 
         <div class="card">
             <img src="images/usage.png" alt="App Usage Tracker" class="project-img">
-            <h3>App Usage Tracker</h3>
-            <p>Desktop tool to monitor daily application usage using Python GUI.</p>
+            <div class="card-content">
+                <h3>App Usage Tracker</h3>
+                <p>Desktop tool to monitor daily application usage using Python GUI.</p>
+            </div>
         </div>
 
     </section>
